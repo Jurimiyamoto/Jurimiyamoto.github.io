@@ -1,0 +1,562 @@
+/* CASのcss */
+
+body{
+	font-size:14px;
+	font-family: PT Sans,sans-serif;
+	line-height:1.5;
+	color:#000;
+	background-color: #f1f1f1;
+}
+.wrapper{
+	width:1200px;
+	margin:0 auto 0;
+}
+
+a:link,
+a:visited{
+	color:#fff;
+	text-decoration:none;
+}
+a:hover{
+	color:#000;
+	text-decoration: none;
+}
+
+/*
+★★★★★★★★★★★★★★★★★★★★★★★★★★★★
+ヘッダー
+★★★★★★★★★★★★★★★★★★★★★★★★★★★★
+ */
+
+header{
+	width: 100%;
+	background-color: #fff;
+	height:80px;
+	overflow:hidden;
+}
+
+h1{
+	margin-top:20px;
+	width:367px;
+	height:40px;
+	float:left;
+}
+ul.menu{
+	float: right;
+	overflow: hidden;
+}
+ul.menu li{
+	float:left;
+	width:91px;
+	height:80px;
+	padding-top: 20px;
+	text-align:center;
+	background:url(../img/line01.png)left top no-repeat;
+}
+ul.menu li a img{
+	-webkit-transition: 0.3s ease-in-out;
+	-moz-transition: 0.3s ease-in-out;
+	-o-transition: 0.3s ease-in-out;
+	transition: 0.3s ease-in-out;
+}
+ul.menu li a:hover img{
+	opacity: 0.6;
+}
+
+
+/*
+★★★★★★★★★★★★★★★★★★★★★★★★★★★★
+質問
+★★★★★★★★★★★★★★★★★★★★★★★★★★★★
+ */
+
+.chart{
+	position: relative;
+	height: 610px;
+}
+.question-img01{
+	overflow: hidden;
+	position: absolute;
+	width: 100%;
+	height: 450px;
+	z-index: 5;
+	text-align: center;
+	margin: 0 auto;
+	background:url(../img/chart01.jpg)center 0 no-repeat;
+	background-size: cover;
+}
+.question-img02{
+	overflow: hidden;
+	position: absolute;
+	width: 100%;
+	height: 450px;
+	z-index: 5;
+	text-align: center;
+	margin: 0 auto;
+	background:url(../img/chart02.jpg)center 0 no-repeat;
+	background-size: cover;
+}
+.question{
+	width: 622px;
+	height: 75px;
+	left: 60px;
+	right: 0;
+	margin: auto;
+	position: absolute;
+	z-index: 10;
+	color: #fff;
+	font-size: 36px;
+	top:145px;
+	text-align: center;
+	padding-left: 30px;
+	padding-top: 12px;
+	background:url(../img/Q.png)left 0 no-repeat;
+}
+
+.yes-no{
+	left: 0;
+	right: 0;
+	margin: auto;
+	position: absolute;
+	height: 80px;
+	width: 540px;
+	overflow: hidden;
+	top:280px;
+	z-index: 10;
+}
+.yes a{
+	display: block;
+	width: 239px;
+	height: 80px;
+	background: url(../img/yes.png) no-repeat 0 0;
+}
+.yes a:hover{
+	background-position: 0 bottom;
+}
+.yes{
+	float: left;
+}
+.no{
+	float: right;
+}
+.no a{
+	display: block;
+	width: 239px;
+	height: 80px;
+	background: url(../img/no.png) no-repeat 0 0;
+}
+.no a:hover{
+	background-position: 0 bottom;
+}
+ul.icon{
+	position: absolute;
+	top: 450px;
+	width: 100%;
+	z-index:10;
+	height: 130px;
+	padding-top: 30px;
+	background-color: #000;
+	overflow: hidden;
+}
+ul.icon li{
+	width: 100px;
+	height: 100px;
+	margin-right: 30px;
+	margin-bottom: 50px;
+	float: left;
+}
+
+/*
+★★★★★★★★★★★★★★★★★★★★★★★★★★★★
+質問結果
+★★★★★★★★★★★★★★★★★★★★★★★★★★★★
+ */
+
+.chart-gf{
+	width: 100%;
+	height: 610px;
+	text-align: center;
+	margin: 0 auto;
+	position: relative;
+	background:url(../img/chart-gf-back.jpg)center 0 no-repeat;
+	background-size: cover;
+}
+.chart-gf-img{
+/* 	position: absolute;
+width: 1200px;
+height: 610px; */
+	z-index: 5;
+	text-align: center;
+	margin: 0 auto;
+}
+.chart-gf-back{
+	position: absolute;
+	width: 100%;
+	height: 610px;
+	z-index: 3;
+	text-align: center;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+.fukidashi{
+	left: 30px;
+	right: 0;
+	margin: auto;
+	position: absolute;
+	height: 299px;
+	width: 429px;
+	overflow: hidden;
+	top:190px;
+	z-index: 10;
+}
+.kanojo{
+	left: 930px;
+	right: 0;
+	margin: auto;
+	position: absolute;
+	height: 190px;
+	width: 230px;
+	overflow: hidden;
+	top:350px;
+	z-index: 10;
+}
+.tweet{
+	left: 600px;
+	right: 0;
+	margin: auto;
+	position: absolute;
+	height: 138px;
+	width: 164px;
+	overflow: hidden;
+	top:460px;
+	z-index: 10;
+}
+
+
+
+
+
+/*
+★★★★★★★★★★★★★★★★★★★★★★★★★★★★
+PICKUP&NEW
+★★★★★★★★★★★★★★★★★★★★★★★★★★★★
+ */
+
+.pick-up{
+	overflow: hidden;
+	margin-bottom: 40px;
+}
+.new-release{
+	overflow: hidden;
+	margin-bottom: 40px;
+}
+
+.h1-png{
+	width: 100%;
+	text-align: center;
+	margin-top: -16px;
+}
+.h-png span{
+	height: 6px;
+	margin-top: -20px;
+}
+.title-h1{
+	background: URL(../img/h1.png) no-repeat center 0;
+	margin-bottom: 30px;
+	padding-top: 30px;
+	text-align: center;
+	font-size: 30px;
+	font-family: PT Sans,sans-serif;
+	color: #484848;
+	line-height: 22px;
+}
+.title-h1 span{
+	font-size: 14px;
+	letter-spacing: 1px;
+}
+.title-h2{
+	border-top: 1px #bababa solid;
+	background: URL(../img/h2.png) no-repeat center 0;
+	margin: 20px 0 30px 0;
+	padding-top: 30px;
+	text-align: center;
+	font-size: 30px;
+	font-family: PT Sans,sans-serif;
+	color: #484848;
+	line-height: 22px;
+}
+.title-h2 span{
+	font-size: 14px;
+	letter-spacing: 1px;
+}
+
+.contents-inner{
+	margin-bottom: 40px;
+}
+
+.left{
+	float: left;
+	margin-top: 178px;
+	margin-right: 25px;
+}
+.left a:link,
+a:visited{
+	text-decoration: none;
+}
+.left-c{
+	float: left;
+	margin-top: 63px;
+	margin-right: 25px;
+}
+.contents{
+	float: left;
+	margin-right: 25px;
+}
+.contents-img{
+	width: 350px;
+	height: 200px;
+}
+h3{
+	font-size: 18px;
+	margin-bottom: 4px;
+}
+.contents-text{
+	width: 302px;
+	height: 112px;
+	background-color: #fff;
+	padding: 24px;
+}
+.contents-text p{
+	line-height: 1.4;
+}
+.device{
+	width: 100px;
+	height: 28px;
+	margin: 8px 0 0 202px;
+	overflow: hidden;
+}
+.device-inner{
+	width: 28px;
+	height: 28px;
+	float: left;
+	margin-right: 8px;
+}
+ul.device li:last-child{
+	margin-right: 0;
+}
+.syousai{
+	color: #fff;
+	background-color: #82be28;
+	width: 350px;
+	height: 30px;
+	padding-top: 10px;
+}
+.syousai-icon{
+	margin-left: 24px;
+	padding-left: 20px;
+	background: URL(../img/go.png) no-repeat 0 0;
+}
+.right{
+	float: left;
+	margin-top: 178px;
+}
+.right-c{
+	float: left;
+	margin-top: 63px;
+}
+
+
+/*
+★★★★★★★★★★★★★★★★★★★★★★★★★★★★
+カテゴリー別
+★★★★★★★★★★★★★★★★★★★★★★★★★★★★
+ */
+
+.category{
+	overflow: hidden;
+	margin-bottom: 40px;
+}
+.title-h3{
+	border-top: 1px #bababa solid;
+	background: URL(../img/h3.png) no-repeat center 0;
+	margin: 20px 0 30px 0;
+	padding-top: 30px;
+	text-align: center;
+	font-size: 30px;
+	font-family: PT Sans,sans-serif;
+	color: #484848;
+	line-height: 22px;
+}
+.title-h3 span{
+	font-size: 14px;
+	letter-spacing: 1px;
+}
+.title-h4{
+	border-top: 1px #bababa solid;
+	background: URL(../img/h4.png) no-repeat center 0;
+	margin: 20px 0 30px 0;
+	padding-top: 30px;
+	text-align: center;
+	font-size: 30px;
+	font-family: PT Sans,sans-serif;
+	color: #484848;
+	line-height: 22px;
+}
+.title-h4 span{
+	font-size: 14px;
+	letter-spacing: 1px;
+}
+.title-h5{
+	border-top: 1px #bababa solid;
+	background: URL(../img/h5.png) no-repeat center 0;
+	margin: 20px 0 30px 0;
+	padding-top: 30px;
+	text-align: center;
+	font-size: 30px;
+	font-family: PT Sans,sans-serif;
+	color: #484848;
+	line-height: 22px;
+}
+.title-h5 span{
+	font-size: 14px;
+	letter-spacing: 1px;
+}
+.title-h6{
+	border-top: 1px #bababa solid;
+	background: URL(../img/h6.png) no-repeat center 0;
+	margin: 20px 0 30px 0;
+	padding-top: 30px;
+	text-align: center;
+	font-size: 30px;
+	font-family: PT Sans,sans-serif;
+	color: #484848;
+	line-height: 22px;
+}
+.title-h6 span{
+	font-size: 14px;
+	letter-spacing: 1px;
+}
+
+ul.category-contents li{
+	float: left;
+	margin-right: 16px;
+}
+
+.curation{
+	overflow: hidden;
+	margin-bottom: 40px;
+	text-align: center;
+}
+ul.curation-contents{
+	margin: 0 auto;
+	width: 729px;
+}
+ul.curation-contents li{
+	float: left;
+	margin-right: 16px;
+}
+ul.curation-contents li:last-child{
+	margin-right: 0;
+}
+
+
+/*
+★★★★★★★★★★★★★★★★★★★★★★★★★★★★
+フッター
+★★★★★★★★★★★★★★★★★★★★★★★★★★★★
+ */
+
+footer{
+	margin-top: 130px;
+	width:100%;
+	height:168px;
+	overflow:hidden;
+	background-color: #82be28;
+}
+footer a:hover{
+	color:#000;
+	border-bottom: 1px #000 dotted;
+}
+
+.footer-inner{
+	width: 1200px;
+	padding-top: 60px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.footer-left{
+	float: left;
+}
+ul.footer-contents li{
+	float: left;
+	margin-right: 30px;
+}
+.copy{
+	color: #fff;
+	font-size: 12px;
+	margin-top: 30px;
+}
+.footer-logo{
+	float: right;
+}
+
+
+/*
+★★★★★★★★★★★★★★★★★★★★★★★★★★★★
+hover設定
+★★★★★★★★★★★★★★★★★★★★★★★★★★★★
+ */
+
+figure {
+	position: relative;
+	overflow: hidden;
+	width: 170px;
+	border-radius: 12px;
+}
+figcaption {
+	border-radius: 12px;
+	color: #fff;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	width: 138px;
+	height: 140px;
+	padding: 30px 16px 0 16px;
+	background: rgba(0,0,0,.6);
+	-webkit-transform: rotateX(-180deg);
+	transform: rotateX(-180deg);
+	-webkit-transition: .5s;
+	transition: .5s;
+	opacity: 0;
+}
+figure:hover figcaption {
+	-webkit-transform: rotateX(0);
+	transform: rotateX(0);
+	opacity: 1;
+}
+.category-h3{
+	font-size: 14px;
+}
+figcaption p{
+	padding-top: 16px;
+	font-size: 12px;
+}
+.curation-contents figcaption{
+	text-align: left;
+	color: #fff;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	width: 100%;
+	height: 100%;
+	padding: 30px 16px 0 16px;
+	background: rgba(0,0,0,.6);
+	-webkit-transform: rotateX(-180deg);
+	transform: rotateX(-180deg);
+	-webkit-transition: .5s;
+	transition: .5s;
+	opacity: 0;
+}
